@@ -1,0 +1,23 @@
+{
+  "name": "pullrequesttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandoPrudente/teste.git"
+  },
+  "author": "Fernando P. Matos <fernandosotam@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandoPrudente/teste/issues"
+  },
+  "homepage": "https://github.com/fernandoPrudente/teste#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
