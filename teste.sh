@@ -2,4 +2,4 @@
 
 # AUTHOR: Fernando Matos
 
-ECHO "FERNANDO"
+echo "FERNANDO"
