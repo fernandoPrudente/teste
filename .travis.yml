@@ -8,10 +8,11 @@ node_js:
 script:
 #  - npm run test
   - echo "END SCRIPT"
+  - chmod u+x ./teste.sh
 after_success:
   - echo "AFTER SUCCESS"
 deploy:
   provider: script
-  script: chmod +x ./teste.sh && ./teste.sh
+  #script: chmod +x ./teste.sh && ./teste.sh
   on:
     all_branches: true
