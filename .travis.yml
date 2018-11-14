@@ -11,6 +11,9 @@ script:
 after_success:
   - echo "AFTER SUCCESS"
 deploy:
-  - provider: script
-    script: 
-      - echo "DEPLOY"
+  provider: script
+  script: 
+    - echo "DEPLOY"
+  on:
+    all_branches: true
+  
