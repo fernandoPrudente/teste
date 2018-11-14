@@ -16,3 +16,6 @@ deploy:
   script: bash teste.sh
   on:
     all_branches: true
+after_deploy: 
+  - echo "deplois do deploy"
+  - cat deploy_log.txt

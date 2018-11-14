@@ -2,4 +2,4 @@
 
 # AUTHOR: Fernando Matos
 
-echo "FERNANDO"
+echo "FERNANDO" >> deploy_log.txt
