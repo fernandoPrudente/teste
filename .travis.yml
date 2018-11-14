@@ -2,9 +2,11 @@ sudo: required
 language: node_js
 node_js:
   - "8.1.4"
-cache:
-  directories:
-    - "node_modules"
+#cache:
+#  directories:
+#    - "node_modules"
 script:
-  - npm run test
-  - TESTE=Fernando; echo $TESTE
+#  - npm run test
+  - echo "END SCRIPT"
+after_success:
+  - echo "AFTER SUCCESS"
