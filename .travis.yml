@@ -12,8 +12,6 @@ after_success:
   - echo "AFTER SUCCESS"
 deploy:
   provider: script
-  script: 
-    - echo "DEPLOY"
+  script: ./teste.sh
   on:
     all_branches: true
-  
