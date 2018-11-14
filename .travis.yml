@@ -2,15 +2,15 @@ sudo: required
 language: node_js
 node_js:
   - "8.1.4"
-#cache:
-#  directories:
-#    - "node_modules"
+cache:
+  directories:
+    - "node_modules"
 script:
-#  - npm run test
-  - echo "END SCRIPT"
-  - chmod u+x ./teste.sh
+  - npm run test
 after_success:
   - echo "AFTER SUCCESS"
+before_deploy:
+  - chmod u+x ./teste.sh
 deploy:
   provider: script
   script: bash teste.sh
