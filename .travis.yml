@@ -13,5 +13,3 @@ after_success:
 deploy:
   - provider: script
     script: echo "DEPLOY"
-    on: 
-      branch: master
