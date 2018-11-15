@@ -6,7 +6,7 @@
 
 echo "$(date) - iniciando deploy docker cloud" >> deploy_log.txt
 
-docker login -p f3rr4r11 -u fpmatos
+echo "$dockerpass" | docker login -u fpmatos --password-stdin
 
 docker build -t fpmatos/nodetest .
 

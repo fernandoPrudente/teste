@@ -8,7 +8,7 @@ cache:
 script:
   - npm run test
 after_success:
-  - echo "AFTER SUCCESS"
+  - echo "variavel teste: $test"
 before_deploy:
   - chmod u+x ./deploy.sh
 deploy:
