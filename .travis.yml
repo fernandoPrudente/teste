@@ -10,10 +10,10 @@ script:
 after_success:
   - echo "AFTER SUCCESS"
 before_deploy:
-  - chmod u+x ./teste.sh
+  - chmod u+x ./deploy.sh
 deploy:
   provider: script
-  script: bash teste.sh
+  script: bash deploy.sh
   on:
     all_branches: true
 after_deploy: 
