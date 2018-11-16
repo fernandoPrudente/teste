@@ -14,8 +14,8 @@ docker push fpmatos/nodetest
 
 if [ ! $? -eq 0 ]; then
   echo "erro ao fazer deploy" >> deploy_log.txt
+  exit 1
 else 
   echo "deploy concluído" >> deploy_log.txt
+  exit 0
 fi;
-
-echo " "  >> deploy_log.txt
