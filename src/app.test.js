@@ -2,7 +2,7 @@ const expect = require('chai').expect;
 
 describe('teste 01', () => {
     it('tem q ser verdadeiro', () => {
-        expect(1).eq(2);
+        expect(1).eq(1);
     });
 
     it('tem q ser verdadeiro', () => {
