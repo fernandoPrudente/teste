@@ -17,5 +17,4 @@ if [ ! $? -eq 0 ]; then
   exit 1
 else 
   echo "deploy concluído" >> deploy_log.txt
-  exit 0
 fi;
