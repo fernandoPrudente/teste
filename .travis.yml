@@ -18,6 +18,7 @@ deploy:
   on:
     all_branches: true
 after_deploy: 
-  - ./deploy/deploytest.sh
-  - echo "exibindo log do deploy:"
-  - cat ./deploy_log.txt
+  #- ./deploy/deploytest.sh
+  #- echo "exibindo log do deploy:"
+  #- cat ./deploy_log.txt
+  - travis_terminate 1;
