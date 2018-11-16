@@ -10,12 +10,12 @@ script:
 after_success:
   - echo "variavel teste: $test"
 before_deploy:
-  - chmod u+x ./deploy.sh
+  - chmod u+x ./deploy/deploy.sh
 deploy:
   provider: script
-  script: bash deploy.sh
+  script: bash ./deploy/deploy.sh
   on:
     all_branches: true
 after_deploy: 
   - echo "exibindo log do deploy:"
-  - cat deploy_log.txt
+  - cat ./deploy/deploy_log.txt
