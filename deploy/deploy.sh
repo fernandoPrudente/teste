@@ -12,5 +12,10 @@ docker build -t fpmatos/nodetest .
 
 docker push fpmatos/nodetest
 
-echo "deploy concluído" >> deploy_log.txt
+if [ ! $? -eq 0 ]; then
+  echo "erro ao fazer deploy" >> deploy_log.txt
+else 
+  echo "deploy concluído" >> deploy_log.txt
+fi;
+
 echo " "  >> deploy_log.txt
